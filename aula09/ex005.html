@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript DOM</title>
     <style>
-      body {
-        background-color: #0d0540;
-        color: #f27405;
-        font: normal 16pt arial;
-      }
+        body {
+            background-color: #0d0540;
+            color: #f27405;
+            font: normal 16pt arial;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <h1>Iniciando os estudos DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo usar o <strong>DOM</strong> em JavaScript</p>
@@ -26,25 +27,23 @@
       corpo.style.backgroundColor = 'black'
     </script>-->
     <script>
-      var corpo = window.document.body;
-      var p1 = window.document.getElementsByTagName("p")[1];
-      var d = window.document.querySelector('div.msg')
-      d.style.background = 'blue'
+        var corpo = window.document.body;
+        var p1 = window.document.getElementsByTagName("p")[1];
+        var d = window.document.querySelector("div.msg");
+        d.style.background = "blue";
 
-      /* POR ID.
-      var d = window.document.getElementById('msg')
-      d.style.background='green'
-      d.innerText='Estou aguardando...'*/
+        /* POR ID.
+        var d = window.document.getElementById('msg')
+        d.style.background='green'
+        d.innerText='Estou aguardando...'*/
 
-      /* POR NOME
-      var d = window.document.getElementsByName('msg')[0]
-      d.innerText = 'Olá'*/
+        /* POR NOME
+        var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'Olá'*/
 
-      /*var d = window.document.getElementsByClassName('msg')[0]
-      d.innerHTML = 'Olá'*/
-
-      
-      
+        /*var d = window.document.getElementsByClassName('msg')[0]
+        d.innerHTML = 'Olá'*/
     </script>
-  </body>
+</body>
+
 </html>
