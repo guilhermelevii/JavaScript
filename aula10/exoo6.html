@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt=br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eventos DOM</title>
     <style>
-        body{
-            display: flex;
-            justify-content: center;
-            align-items: center; 
-            height: 100vh;           
-        }
-        div#area {
-            font: normal 20pt arial;
-            background-color: green;
-            color: white;
-            width: 200px;
-            height: 200px;
-            text-align: center;
-            line-height: 200px;
-        }
-    </style>
-</head>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
 
-<body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
-        interaja..
+      div#area {
+        font: normal 20pt arial;
+        background-color: green;
+        color: white;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        line-height: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      id="area"
+      onclick="clicar()"
+      onmouseenter="entrar()"
+      onmouseout="sair()"
+    >
+      interaja..
     </div>
     <script>
-        function clicar(){
-            var a = window.document.getElementById('area')
-            a.innerHTML = 'Clicou'
+      var a = window.document.getElementById("area");
 
-        }
+      function clicar() {
+        a.innerHTML = "Clicou";
+      }
 
-        function entrar() {
-            var a = window.document.getElementById('area')
-            a.innerHTML = 'ENTROU'
-        }
+      function entrar() {
+        a.innerHTML = "ENTROU";
+      }
 
-        function sair(){
-            var a = window.document.getElementById('area')
-            a.innerHTML = 'SAIU'
-        }
+      function sair() {
+        a.innerHTML = "SAIU";
+      }
     </script>
-</body>
-
+  </body>
 </html>
