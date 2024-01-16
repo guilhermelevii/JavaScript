@@ -26,15 +26,18 @@
 
   <body>
     <div
-      id="area"
-      onclick="clicar()"
-      onmouseenter="entrar()"
-      onmouseout="sair()"
-    >
+      < id="area"
+      <!--onclick="clicar()"-->
+      <!--onmouseenter="entrar()"-->
+      <!--onmouseout="sair()"-->
+      <!--tem a maneira de fazer no HTML e no javascript como está acontecendo nesse exemplo aqui.-->
       O BRUNO É GAY?
     </div>
     <script>
       var a = window.document.getElementById("area");
+      a.addEventListener('click', clicar)
+      a.addEventListener('mouseenter', entrar)
+      a.addEventListener('mouseout',sair)
 
       function clicar() {
         a.innerHTML = "Clicou";
