@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt=br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EM QUAL PAIS VOCÊ MORA?</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>LOCALIDADE</h1>
-    EM QUAL PAIS VOCÊ MORA? <input type="text" id="cid" name="cid" placeholder="QUAL SEU PAIS"><br>
-    <input type="button" value="VERIFICAR" onclick="verificar()">
+    EM QUAL PAIS VOCÊ MORA?
+    <input type="text" id="cid" name="cid" placeholder="QUAL SEU PAIS" /><br />
+    <input type="button" value="VERIFICAR" onclick="verificar()" />
     <div id="res"></div>
     <script>
-        function verificar(){
-            var cid = window.document.querySelector("input#cid");
-            var res = window.document.querySelector("div#res");
-            var pais = (cid.value.toLowerCase()) // tem que colocar o valor do input
-            res.innerHTML = `<p>O seu pais é ${pais} .</p>`
-            if (pais === 'brasil'){ // Em resumo, === é considerado mais seguro e é recomendado em situações em que você deseja garantir igualdade estrita. 
-                res.innerHTML += `<p>Você é brasileiro meu amigo.</p>`
-            } else{
-                res.innerHTML += `<p>Você é gringo rapaz!</p>`
-            }
-            
-            
-            
+      function verificar() {
+        var cid = window.document.querySelector("input#cid");
+        var res = window.document.querySelector("div#res");
+        var pais = cid.value.toLowerCase(); // tem que colocar o valor do input
+        res.innerHTML = `<p>O seu pais é ${pais} .</p>`;
+        if (pais === "brasil") {
+          // Em resumo, === é considerado mais seguro e é recomendado em situações em que você deseja garantir igualdade estrita.
+          res.innerHTML += `<p>Você é brasileiro meu amigo.</p>`;
+        } else {
+          res.innerHTML += `<p>Você é gringo rapaz!</p>`;
         }
-        
+      }
     </script>
-
-    
-</body>
+  </body>
 </html>
