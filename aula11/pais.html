@@ -11,35 +11,63 @@
       }
       body {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /*sempre colocar o HEIGHT e o MARGIN pra vc CENTRALIZAR UMA DIV*/
+        margin: 0px;
+      }
+
+      #container {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
       }
 
       .loca {
+        display: flex;
         padding: 40px;
         padding-bottom: 25px;
       }
 
-      #cid {
-        padding: 10px;
-      }
       span {
+        display: flex;
         padding: 10px;
         padding-bottom: 30px;
       }
 
+      #cid {
+        display: flex;
+        padding: 10px;
+      }
+
       #botao {
+        display: flex;
         background-color: aqua;
         color: black;
+      }
+
+      #res {
+        padding: 20px;
       }
     </style>
   </head>
   <body>
-    <h1 class="loca">LOCALIDADE</h1>
-    <span>EM QUAL PAIS VOCÊ MORA?</span>
-    <input type="text" id="cid" name="cid" placeholder="QUAL SEU PAIS" /><br />
-    <input type="button" value="VERIFICAR" onclick="verificar()" id="botao" />
-    <div id="res"></div>
+    <div id="container">
+      <h1 class="loca">LOCALIDADE</h1>
+      <span>EM QUAL PAIS VOCÊ MORA?</span>
+      <input
+        type="text"
+        id="cid"
+        name="cid"
+        placeholder="QUAL SEU PAIS"
+      /><br />
+      <input type="button" value="VERIFICAR" onclick="verificar()" id="botao" />
+      <div id="res"></div>
+    </div>
     <script>
       function verificar() {
         var cid = window.document.querySelector("input#cid");
