@@ -1,121 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt=br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EM QUAL PAIS VOCÊ MORA?</title>
-    <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-      }
 
-      body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        /*sempre colocar o HEIGHT e o MARGIN pra vc CENTRALIZAR UMA DIV*/
-        margin: 0px;
-        background-color: #402318;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EM QUAL PAIS VOCÊ MORA?</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
 
-      #container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 400px;
-        height: 400px;
-        background-color: #735246;
-        border-radius: 10px;
-      }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      /*sempre colocar o HEIGHT e o MARGIN pra vc CENTRALIZAR UMA DIV*/
+      margin: 0px;
+      background-color: #402318;
+    }
 
-      .loca {
-        display: flex;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 40px;
-        padding-bottom: 25px;
-        color: #f2f2f2;
-      }
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 400px;
+      height: 400px;
+      background-color: #735246;
+      border-radius: 10px;
+    }
 
-      span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        padding-bottom: 30px;
-        color: #f2f2f2;
-      }
+    .loca {
+      display: flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      padding-bottom: 25px;
+      color: #f2f2f2;
+    }
 
-      #cid {
-        display: flex;
-        padding: 10px;
-        border-radius: 7px;
-        background-color: #e8f2c4;
-      }
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      padding-bottom: 30px;
+      color: #f2f2f2;
+    }
 
-      #res {
-        padding: 20px;
-        font-size: 20px;
-        color: #f2f2f2;
-      }
+    #cid {
+      display: flex;
+      padding: 10px;
+      border-radius: 7px;
+      background-color: #e8f2c4;
+    }
 
-      #botao {
-        display: flex;
-        font-style: italic;
-        font-weight: bolder;
-        background-color: #c2d971;
-        color: #402318;
-        padding: 8px;
-        border-radius: 4px;
-        margin-top: 15px;
-        transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
-      }
+    #res {
+      padding: 20px;
+      font-size: 20px;
+      color: #f2f2f2;
+    }
 
-      #botao:hover {
-        background-color: #a61717;
-        color: #000 !important;
-        background-color: transparent;
-        text-shadow: nfour;
-      }
+    #botao {
+      display: flex;
+      font-style: italic;
+      font-weight: bolder;
+      background-color: #c2d971;
+      color: #402318;
+      padding: 8px;
+      border-radius: 4px;
+      margin-top: 15px;
+      transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    }
 
-      #botao:hover:before {
-        right: 0%;
-        left: auto;
-        width: 100%;
-      }
-    </style>
-  </head>
+    #botao:hover {
+      background-color: #a61717;
+      color: #000 !important;
+      background-color: transparent;
+      text-shadow: nfour;
+    }
 
-  <body>
-    <div id="container">
-      <h1 class="loca">LOCALIDADE</h1>
-      <span>EM QUAL PAIS VOCÊ MORA?</span>
-      <input
-        type="text"
-        id="cid"
-        name="cid"
-        placeholder="QUAL SEU PAÍS?"
-      /><br />
-      <input type="button" value="VERIFICAR" onclick="verificar()" id="botao" />
-      <div id="res"></div>
-    </div>
-    <script>
-      function verificar() {
-        var cid = window.document.querySelector("input#cid");
-        var res = window.document.querySelector("div#res");
-        var pais = cid.value.toLowerCase(); // tem que colocar o valor do input
-        res.innerHTML = `<p>O seu pais é ${pais} .</p>`;
-        if (pais === "brasil") {
-          // Em resumo, === é considerado mais seguro e é recomendado em situações em que você deseja garantir igualdade estrita.
-          res.innerHTML += `<p>Você é brasileiro meu amigo.</p>`;
-        } else {
-          res.innerHTML += `<p>Você é gringo rapaz!</p>`;
-        }
+    #botao:hover:before {
+      right: 0%;
+      left: auto;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1 class="loca">LOCALIDADE</h1>
+    <span>EM QUAL PAIS VOCÊ MORA?</span>
+    <input type="text" id="cid" name="cid" placeholder="QUAL SEU PAÍS?" /><br />
+    <input type="button" value="VERIFICAR" onclick="verificar()" id="botao" />
+    <div id="res"></div>
+  </div>
+  <script>
+    function verificar() {
+      var cid = window.document.querySelector("input#cid");
+      var res = window.document.querySelector("div#res");
+      var pais = cid.value.toLowerCase(); // tem que colocar o valor do input
+      res.innerHTML = `<p>O seu pais é ${pais} .</p>`;
+      if (pais === "brasil") {
+        // Em resumo, === é considerado mais seguro e é recomendado em situações em que você deseja garantir igualdade estrita.
+        res.innerHTML += `<p>Você é brasileiro meu amigo.</p>`;
+      } else {
+        res.innerHTML += `<p>Você é gringo rapaz!</p>`;
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>
