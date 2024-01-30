@@ -1,4 +1,5 @@
-var hora = 6; // Exemplo de hora para teste
+var agora = new Date() // Exemplo de hora para teste
+var hora = agora.getHours() // hora atual do sistema
 
 console.log(`Agora são exatamente ${hora} horas.`);
 

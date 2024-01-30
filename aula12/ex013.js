@@ -1,20 +1,39 @@
-var idade = 17
-console.log(`Você tem ${idade} anos de idade.`)
-if(idade >= 18){
-    console.log('Você é maior de idade')
-} else{
-    console.log('Você é menor de idade.')
-}
+var agora = new Date()
+var diaSem = agora.getDay()
+/*
+0 = Domingo
+1 = Segunda
+2 = Terça
+3 = Quarta
+4 = Quinta
+5 = Sexta
+6 = Sábado
+*/
 
-var num = -5
-console.log(`O número escolhido foi ${num}`)
-if(num > 0){
-    console.log('O número é positivo')
-} else if(num < 0){
-    console.log('O número é negativo')
+//console.log(diaSem)
+switch (diaSem) {
+    case 0:
+        console.log('Domingo')
+        break
+    case 1:
+        console.log('Segunda')
+        break
+    case 2:
+        console.log('Terça')
+        break
+    case 3:
+        console.log('Quarta')
+        break
+    case 4:
+        console.log('Quinta')
+        break
+    case 5:
+        console.log('Sexta')
+        break
+    case 5:
+        console.log('Sábado')
+        break
+    default:
+        console.log('Dia inválido - ERROR')
+        break
 }
-
-var valor = 650;
-console.log(`O valor de quilômetros escolhido foi de ${valor} Km`);
-var formula = (valor * 1000);
-console.log(`O valor de ${valor} quilômetro é o equivalente a ${formula} metros. `)
