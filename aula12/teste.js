@@ -18,3 +18,5 @@ var valor = 650;
 console.log(`O valor de quilômetros escolhido foi de ${valor} Km`);
 var formula = (valor * 1000);
 console.log(`O valor de ${valor} quilômetro é o equivalente a ${formula} metros. `)
+
+
