@@ -5,7 +5,7 @@
 
 body {
     font-family: "Source Code Pro", monospace;
-    background-color: green;
+    background-color: #A6754B;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,12 +16,13 @@ body {
 
 header {
     padding-bottom: 50px;
+    color: #402116 ;
 }
 
 
 
 section {
-    background-color: red;
+    background-color: #03A678;
     width: 400px;
     height: 700px;
     display: flex;
@@ -30,6 +31,12 @@ section {
     align-items: center;
     border-radius: 10px;
 
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 #ano {
