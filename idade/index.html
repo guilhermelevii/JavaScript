@@ -17,14 +17,29 @@
         <h1>Projeto Idade</h1>
     </header>
     <section>
-        <div id="container">
-            <div class="input">
+        <div class="input">
+
+
+
+            <p class="anodenas"><span>Ano de Nascimento:</span>
                 <input type="number" name="ano" id="ano" placeholder="ADICIONE O ANO QUE VOCÊ NASCEU"
                     style="width: 300px; height: 40px;">
-            </div>
-            <div class="img">...
-                <img src="" alt="">
-            </div>
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <!--o CHECKED deixa obrigatoriamente um marcado.-->
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input class="botao" type="button" value="Verificar" onclick="verificar()">
+            </p>
+        </div>
+
+        <div class="res">
+            Preencha os dados acima para ver o resultado
+
         </div>
     </section>
 
@@ -33,6 +48,7 @@
             &copy; Guilherme Levi
         </p>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 
