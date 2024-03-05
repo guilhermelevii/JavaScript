@@ -30,7 +30,8 @@ section {
     align-items: center;
     border-radius: 20px;
     margin: auto;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .img {
@@ -53,7 +54,7 @@ section {
     align-items: center;
 }
 
-.anodenas>span {
+.anodenas>label {
     margin-bottom: 30px;
 }
 
@@ -62,6 +63,24 @@ section {
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+}
+
+label {
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Estilo para rótulos quando o rádio está marcado */
+input[type="radio"]:checked+label {
+    background-color: #a6754b;
+    /* Cor de fundo quando marcado */
+    color: black;
+    /* Cor do texto quando marcado */
+    border-radius: 5px;
+}
+
+input[type="radio"]:checked + label::before{
+    background-color: red;
 }
 
 p>.botao {
@@ -83,7 +102,6 @@ p>.botao {
     -webkit-user-select: none;
     touch-action: manipulation;
     cursor: pointer;
-
 }
 
 p>.botao:hover {
