@@ -2,58 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto Idade</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 </head>
 
 <body>
     <header>
-        <h1>HOW OLD ARE YOU?
-        </h1>
+        <h1>HOW OLD ARE YOU?</h1>
     </header>
     <section>
         <div class="input">
             <p>
-                <img src="novonovonovo.png" alt="">
+                <img src="novonovonovo.png" alt="" />
             </p>
 
-
-
-            <p class="anodenas"><label for="ano"><span>YEAR OF BIRTH:</span></label>
+            <p class="anodenas">
+                <label for="ano"><span>YEAR OF BIRTH:</span></label>
                 <input type="number" name="txtano" id="txtano" placeholder="ADD THE YEAR YOU WERE BORN"
-                    style="width: 300px; height: 40px;">
+                    style="width: 300px; height: 40px" />
             </p>
-            <p>SEX:
-                <input type="radio" name="radsex" id="mas" checked>
+            <p>
+                SEX:
+                <input type="radio" name="radsex" id="mas" checked />
                 <!--o CHECKED deixa obrigatoriamente um marcado.-->
                 <label for="mas">MASCULINE</label>
-                <input type="radio" name="radsex" id="fem">
+                <input type="radio" name="radsex" id="fem" />
                 <label for="fem">FEMALE</label>
             </p>
             <p>
-                <input class="botao" type="button" value="CHECK" onclick="verificar()">
+                <input class="botao" type="button" value="CHECK" onclick="verificar()" />
             </p>
         </div>
 
         <div id="res">
-            Fill in the information above <br> to see the result
-
+            Fill in the information above <br />
+            to see the result
         </div>
     </section>
 
     <footer>
-        <p>
-            &copy; Guilherme Levi
-        </p>
+        <p>&copy; Guilherme Levi</p>
     </footer>
     <script src="script.js"></script>
-
 </body>
 
 </html>

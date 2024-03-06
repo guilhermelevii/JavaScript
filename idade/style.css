@@ -18,15 +18,9 @@ header {
     padding-bottom: 50px;
     color: #402116;
     margin-top: 50px;
-    text-shadow: -1px 1px 0 #41ba45,
-        1px 1px 0 #c63d2b,
-        1px -1px 0 #42afac,
+    text-shadow: -1px 1px 0 #41ba45, 1px 1px 0 #c63d2b, 1px -1px 0 #42afac,
         -1px -1px 0 #c6c23f;
-
-
-
 }
-
 
 section {
     background-color: #03a678;
@@ -39,7 +33,6 @@ section {
     border-radius: 20px;
     margin: auto;
     box-shadow: 0px 9px 30px rgba(255, 149, 5, 0.3);
-
 }
 
 .img {
@@ -64,7 +57,6 @@ section {
 
 .anodenas>label {
     margin-bottom: 30px;
-
 }
 
 .anodenas {
